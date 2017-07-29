@@ -26,7 +26,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #1E90FF;;
   line-height: 48px;
   display: inline;
 }
@@ -44,6 +44,7 @@ h3 {
   font-size: 20px;
   color: #000;
   line-height: 22px;
+  padding-left: 0 !important;
 }
 
 h4 {
@@ -92,16 +93,30 @@ a {
   display: block;
 }
 
+.contact_link {
+  margin-top: 0;
+}
+
 .welcome-message {
   font-style: italic;
   font-size: 18px;
   color: #f3f3f3;
   line-height: 28px;
+  margin-top: 10px;
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #1E90FF;;
   display: none;
+  margin-top: 30px;
+}
+
+#skills {
+  display: none;
+}
+
+#onlinehead {
+  margin-top: 10px;
 }
 
 .orange {
@@ -110,6 +125,14 @@ a {
 
 .orange-text {
   color: #f5ae23;
+}
+
+.dodgerBlue {
+  color: #1E90FF;
+}
+
+.dodgerBlue-text {
+  color: #1E90FF;
 }
 
 .white-text {
@@ -143,9 +166,14 @@ a {
 
 .flex-column {
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   flex-wrap: nowrap;
   padding: 10px;
+}
+
+.flex-item {
+  display: flex;
+  padding-right: 25px;
 }
 
 .center-content {
@@ -187,6 +215,9 @@ span {
   .biopic {
     width: 175px;
   }
+  #skills-h3 {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -217,5 +248,17 @@ span {
   #skills-h3,
   .biopic {
     display: block;
+  }
+  #skills-h3 {
+  margin-top: 15px;
+  }
+  #skills {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  li.flex-item {
+    flex-direction: column;
   }
 }
